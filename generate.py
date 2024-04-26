@@ -12,9 +12,30 @@ print("1 - Low Performance")
 print("2 - Balanced Performance")
 print("3 - High Performance")
 selection = int(input("Mode:"))
-if selection = 1:
+if selection == 1:
+  print("erm")
+if selection == 3:
+  outputFile = open("output.txt" , "w")
+  outputFile.write("systemctl set-property --runtime -- user.slice AllowedCPUs=")
+  for x in range(physcoresint-2):
+    outputFile.write(str(x))
+    if x < physcoresint-3:
+      outputFile.write(",")
+  outputFile.write("\n")
+
+  outputFile.write("systemctl set-property --runtime -- system.slice AllowedCPUs=")
+  for x in range(physcoresint-2):
+    outputFile.write(str(x))
+    if x < physcoresint-3:
+      outputFile.write(",")
+  outputFile.write("\n")
+
+  outputFile.write("systemctl set-property --runtime -- init.scope AllowedCPUs=")
+  for x in range(physcoresint-2):
+    outputFile.write(str(x))
+    if x < physcoresint-3:
+      outputFile.write(",")
+  outputFile.write("\n")
 
 
-for x in range(physcoresint):
-  print(x)
-
+outputFile.close()
