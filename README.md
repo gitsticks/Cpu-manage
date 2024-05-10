@@ -3,7 +3,7 @@ Remember to chmod +x the files.
 "free.sh" frees every core on the system
 
 If you run cpus with a different topology, you can run the generate.py file, that will ask you questions about your cpu, 
-and will generate the perfect scripts for your cpu!
+and will generate the perfect scripts for your cpu! THIS IS HEAVILY WIP!!! (Doesnt work properly yet pwq)
 
 The premade scripts are made for Xeon e5 v4 2687W Cpus. (You can customize the allocate/free script with lstopology)
 
