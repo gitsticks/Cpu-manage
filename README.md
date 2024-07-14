@@ -1,7 +1,10 @@
 Remember to chmod +x the files.
-"allocate.sh" unhooks and blocks the configured cores from host
-"free.sh" frees every core on the system
-
+- "allocate.sh" unhooks and blocks the configured cores from host
+- "free.sh" frees every core on the system
+- "performance.sh" sets the CPU gouvenor to performance, for max clockspeed inside the vm
+- "dynamic" reverts the CPU gouvenor to ondemand, which saves power when high clockspeed isnt needed.
+- "start.sh" can be used to start your VM with the wanted CPU controll scripts
+  
 If you run cpus with a different topology, you can run the generate.py file, that will ask you questions about your cpu, 
 and will generate the perfect scripts for your cpu! THIS IS HEAVILY WIP!!! (Doesnt work properly yet pwq) i hate python
 
